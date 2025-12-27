@@ -19,13 +19,13 @@ aptos move compile
 aptos move publish
 
 # Initialize your donation pool
-aptos move run --function-id 'YOUR_ADDRESS::SimpleDonation::initialize_pool'
+aptos move run --function-id 'YOUR_ADDRESS::SendMessage::initialize_pool'
 
 Usage Example
 bash
 # Donate to a pool
 aptos move run \
-  --function-id 'YOUR_ADDRESS::SimpleDonation::donate' \
+  --function-id 'YOUR_ADDRESS::SendMessage::donate' \
   --args address:POOL_OWNER_ADDRESS u64:AMOUNT
 Security Considerations
 Always verify the pool owner's address before donating
